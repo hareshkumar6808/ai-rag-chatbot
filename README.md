@@ -1,23 +1,23 @@
-# 📚 Production-Ready AI PDF Chatbot (RAG Architecture)
+# AI PDF Chatbot (RAG Architecture)
 
 A production-grade, modular **Retrieval-Augmented Generation (RAG)** application built with **Streamlit**, **LangChain**, **ChromaDB**, and **Groq AI**. This system allows users to upload PDF documents, automatically index and embed text into a persistent vector database, ask questions in natural language with conversational memory, and view exact page citations for every response.
 
 ---
 
-## 🌟 Key Features
+##  Key Features
 
-- 📄 **Multi-PDF Processing**: Upload single or multiple PDF documents simultaneously.
-- ✂️ **Smart Text Chunking**: Leverages LangChain's `RecursiveCharacterTextSplitter` with configurable chunk sizes and overlaps.
-- ⚡ **Local Vector Embeddings**: Uses `sentence-transformers/all-MiniLM-L6-v2` locally via `langchain-huggingface` to eliminate external embedding API fees and rate limits.
-- 🗄️ **Persistent Vector Database**: Stores vector embeddings locally using **ChromaDB**, preserving indexed data across app sessions.
-- 🚀 **High-Speed Inference**: Powered by **Groq API** (`llama-3.3-70b-versatile`) or OpenAI-compatible models.
-- 💬 **Conversational Memory**: Rephrases questions based on chat history to maintain seamless multi-turn conversations.
-- 📌 **Exact Source Citations**: Displays exact source PDF filenames, 1-indexed page numbers, and text snippets used to formulate each answer.
-- 🛡️ **Production Design**: Clean modular code structure, environment validation, logging, and error handling.
+-  **Multi-PDF Processing**: Upload single or multiple PDF documents simultaneously.
+-  **Smart Text Chunking**: Leverages LangChain's `RecursiveCharacterTextSplitter` with configurable chunk sizes and overlaps.
+-  **Local Vector Embeddings**: Uses `sentence-transformers/all-MiniLM-L6-v2` locally via `langchain-huggingface` to eliminate external embedding API fees and rate limits.
+-  **Persistent Vector Database**: Stores vector embeddings locally using **ChromaDB**, preserving indexed data across app sessions.
+-  **High-Speed Inference**: Powered by **Groq API** (`llama-3.3-70b-versatile`) or OpenAI-compatible models.
+-  **Conversational Memory**: Rephrases questions based on chat history to maintain seamless multi-turn conversations.
+-  **Exact Source Citations**: Displays exact source PDF filenames, 1-indexed page numbers, and text snippets used to formulate each answer.
+-  **Production Design**: Clean modular code structure, environment validation, logging, and error handling.
 
 ---
 
-## 🏗️ System Architecture
+##  System Architecture
 
 ```mermaid
 flowchart TD
@@ -47,7 +47,7 @@ flowchart TD
 
 ---
 
-## 📁 Folder Structure
+##  Folder Structure
 
 ```
 ai-rag-chatbot/
@@ -86,7 +86,7 @@ ai-rag-chatbot/
 
 ---
 
-## ⚡ Setup & Installation
+##  Setup & Installation
 
 ### Prerequisites
 - **Python 3.10+** installed.
@@ -137,7 +137,7 @@ ai-rag-chatbot/
 
 ---
 
-## 🔁 Complete Request Flow
+##  Complete Request Flow
 
 ```
 [Upload PDF] ➡️ [Page Extraction] ➡️ [Text Chunking] ➡️ [Vector Embedding] ➡️ [ChromaDB Indexing]
@@ -173,7 +173,7 @@ ai-rag-chatbot/
 
 ---
 
-## 🧩 How LangChain & ChromaDB Work in This Project
+##  How LangChain & ChromaDB Work in This Project
 
 ### LangChain Orchestration
 LangChain acts as the primary workflow engine, chaining together data structures, models, and retrievers:
@@ -190,7 +190,7 @@ ChromaDB functions as the high-performance local vector database:
 
 ---
 
-## 📸 Screenshots
+##  Screenshots
 
 *(Add screenshots of your application interface here)*
 
@@ -200,7 +200,7 @@ ChromaDB functions as the high-performance local vector database:
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Frontend**: [Streamlit](https://streamlit.io/)
 - **Orchestration**: [LangChain](https://python.langchain.com/)
