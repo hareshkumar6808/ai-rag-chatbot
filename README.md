@@ -1,6 +1,6 @@
 # AI PDF Chatbot (RAG Architecture)
 
-A production-grade, modular **Retrieval-Augmented Generation (RAG)** application built with **Streamlit**, **LangChain**, **ChromaDB**, and **Groq AI**. This system allows users to upload PDF documents, automatically index and embed text into a persistent vector database, ask questions in natural language with conversational memory, and view exact page citations for every response.
+A modular **Retrieval-Augmented Generation (RAG)** application built with **Streamlit**, **LangChain**, **ChromaDB**, and **Groq AI**. This system allows users to upload PDF documents, automatically index and embed text into a persistent vector database, ask questions in natural language with conversational memory, and view exact page citations for every response.
 
 ---
 
@@ -96,7 +96,7 @@ ai-rag-chatbot/
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/your-username/ai-rag-chatbot.git
+   git clone https://github.com/hareshkumar6808/ai-rag-chatbot.git
    cd ai-rag-chatbot
    ```
 
@@ -187,16 +187,6 @@ ChromaDB functions as the high-performance local vector database:
 - **Persistence**: Unlike in-memory vector stores, ChromaDB persists embeddings to disk (`./data/chroma_db`), avoiding re-indexing files across application restarts.
 - **Metadata Association**: Stores raw text content along with structured metadata (`source_name`, `page`), allowing instant lookup and verification of citations.
 - **Similarity Search**: Performs fast nearest-neighbor search over high-dimensional vector embeddings to supply top matching context to the LLM.
-
----
-
-##  Screenshots
-
-*(Add screenshots of your application interface here)*
-
-| Sidebar & Document Processing | Interactive Chat with Source Citations |
-| :---: | :---: |
-| ![Sidebar Screenshot](https://via.placeholder.com/600x400?text=Sidebar+%26+Uploader) | ![Chat Screenshot](https://via.placeholder.com/600x400?text=Chat+Interface+%26+Citations) |
 
 ---
 
